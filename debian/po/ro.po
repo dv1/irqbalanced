@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# stan ioan-eugen <stan.ieugen@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2008-07-11 14:53+0300\n"
+"Last-Translator: stan ioan-eugen <stan.ieugen@gmail.com>\n"
+"Language-Team: romanian <debian-l10n-romanian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#, fuzzy
+#| msgid "Enable irqbalance?"
+msgid "Would you like to enable irqbalance?"
+msgstr "Se activează irqbalance?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#, fuzzy
+#| msgid ""
+#| "Enable the irqbalance daemon to balance IRQs on SMP systems and systems "
+#| "with hyperthreading?"
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Se activează serviciul irqbalance pentru a echilibra întreruperile pe "
+"sistemele SMP și sistemele cu hyperthreading?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+#, fuzzy
+#| msgid "Balance the IRQs once?"
+msgid "Would you like to balance the IRQs once?"
+msgstr "Se echilibrează întreruperile o singură dată?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"irqbalance poate rula în modul „o singură dată”, mod în care întreruperile "
+"sunt echilibrate doar o singură dată. Acest mod este avantajos pe sistemele "
+"cu hyperthreading precum Pentium 4, care par a fi sisteme SMP dar care au de "
+"fapt un singur procesor."
+
+#~ msgid "Run irqbalance in one shot mode?"
+#~ msgstr "Se rulează irqbalance în modul „o singură dată”?"

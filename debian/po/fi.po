@@ -1,0 +1,59 @@
+# Esko Arajärvi <edu@iki.fi>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2009-10-23 21:43+0300\n"
+"Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
+"Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid "Enable irqbalance?"
+msgid "Would you like to enable irqbalance?"
+msgstr "Otetaanko irqbalance käyttöön?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid ""
+#| "Enable the irqbalance daemon to balance IRQs on SMP systems and systems "
+#| "with hyperthreading?"
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Valitse tulisiko irqbalance-taustaohjelma ottaa käyttöön IRQ:iden "
+"tasapainottamiseksi SMP- ja hyperthreading-järjestelmissä."
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+#| msgid "Balance the IRQs once?"
+msgid "Would you like to balance the IRQs once?"
+msgstr "Tasapainotetaanko IRQ:t kerran?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"irqbalance voidaan ajaa tilassa, jossa IRQ:t tasapainotetaan vain kerran. "
+"Tämä on hyödyllistä hyperthreading-järjestelmissä (kuten Pentium 4), jotka "
+"näyttävät SMP-järjestelmiltä, mutta sisältävät vain yhden fyysisen "
+"suorittimen."
+
+#~ msgid "Run irqbalance in one shot mode?"
+#~ msgstr "Valitse tulisiko irqbalance ajaa tässä tilassa."

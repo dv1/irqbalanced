@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE 'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the  package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2007-10-26 14:20+0100\n"
+"Last-Translator: Bart Cornelis <cobaco@skolelinux.no>\n"
+"Language-Team: debian-l10n-dutch <debian-l10n-dutch@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Dutch\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#, fuzzy
+msgid "Would you like to enable irqbalance?"
+msgstr "Wilt u irqbalance activeren?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#, fuzzy
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Wilt u de irqbalance-achtergronddienst activeren, om zo IRQs uit te "
+"balanceren op SMP-systemen en systemen met hyperthreading?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+#, fuzzy
+msgid "Would you like to balance the IRQs once?"
+msgstr "Wilt u de IRQs eenmalig uitbalanceren?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"irqbalance kan in één-keer-modus uitgevoerd worden waarbij de IRQs slechts "
+"één keer uitgebalanceerd worden. Dit is voordelig op hyperthreading-systemen "
+"die SMP lijken te zijn maar in werkelijkheid slechts één fysieke CPU hebben "
+"(zoals bv. de Pentium 4)."
+
+#~ msgid "Run irqbalance in one shot mode?"
+#~ msgstr "Wilt u irqbalance in één-keer-modus uitvoeren?"

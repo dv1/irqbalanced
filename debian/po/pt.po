@@ -1,0 +1,59 @@
+# Portuguese translation for irqbalance's debconf messages.
+# Copyright (C) 2007 Miguel Figueiredo
+# This file is distributed under the same license as the irqbalance package.
+# Miguel Figueiredo <elmig@debianpt.org>, 2007-2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2009-10-23 22:44+0100\n"
+"Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid "Enable irqbalance?"
+msgid "Would you like to enable irqbalance?"
+msgstr "Deseja ligar o irqbalance?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid ""
+#| "Enable the irqbalance daemon to balance IRQs on SMP systems and systems "
+#| "with hyperthreading?"
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Permitir que o daemon irqbalance balanceie os IRQs em sistemas SMP e em "
+"sistemas com hyperthreading."
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+#| msgid "Balance the IRQs once?"
+msgid "Would you like to balance the IRQs once?"
+msgstr "Deseja balancear os IRQs uma vez?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"O irqbalance pode correr no modo 'uma vez', onde os IRQs são balanceados "
+"apenas uma vez. Isto é vantajoso em sistemas com hyperthreading tais como o "
+"Pentium 4, que parece ser um sistema SMP, mas na realidade apenas existe "
+"fisicamente um CPU."
+
+#~ msgid "Run irqbalance in one shot mode?"
+#~ msgstr "Correr o irqbalance no modo 'uma vez'?"

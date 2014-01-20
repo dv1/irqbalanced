@@ -1,0 +1,43 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+db_version 2.0
+
+CONF=/etc/default/irqbalance
+
+if [ "$1" = "configure" ]; then
+    if [ ! -e $CONF ]; then
+        echo "#Configuration for the irqbalance daemon" > $CONF.tmp
+        echo >> $CONF.tmp
+        echo "#Should irqbalance be enabled?" >> $CONF.tmp
+        echo "ENABLED=1" >> $CONF.tmp
+        echo "#Balance the IRQs only once?" >> $CONF.tmp
+        echo "ONESHOT=0" >> $CONF.tmp
+    
+        mv -f "$CONF.tmp" "$CONF" 
+    fi
+    
+    db_get irqbalance/enable
+    if [ "$RET" = "true" ]; then
+        ENABLE="1"
+    else
+        ENABLE="0"
+    fi
+    db_get irqbalance/oneshot
+    if [ "$RET" = "true" ]; then
+        ONESHOT="1"
+    else
+        ONESHOT="0"
+    fi
+    cp -a -f $CONF $CONF.tmp
+    sed -e "s/^ *ENABLED=.*/ENABLED=\"$ENABLE\"/" \
+        -e "s/^ *ONESHOT=.*/ONESHOT=\"$ONESHOT\"/" \
+        < $CONF > $CONF.tmp
+    mv -f $CONF.tmp $CONF
+    
+    db_stop
+fi
+
+#DEBHELPER#

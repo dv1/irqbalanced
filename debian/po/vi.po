@@ -1,0 +1,54 @@
+# Vietnamese Translation for irqbalance.
+# Copyright © 2010 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2010.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance 0.55+20091017-1\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2010-04-01 16:18+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: LocFactoryEditor 1.8\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid "Would you like to enable irqbalance?"
+msgstr "Hiệu lực irqbalance ?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Hiệu lực trình nền irqbalance để cân bằng các IRQ trên hệ thống SMP và hệ "
+"thống siêu nhánh."
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid "Would you like to balance the IRQs once?"
+msgstr "Cân bằng IRQ chỉ một lần ?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"Chương trình irqbalance có khả năng chạy ở chế độ một lần thì mọi IRQ đều "
+"được cân bằng chỉ một lần. Có ích trên hệ thống siêu nhánh như Pentium 4 mà "
+"hình như hệ thống SMP mà thực sự là cùng một CPU vật lý."
+
+#~ msgid "Run irqbalance in one shot mode?"
+#~ msgstr "Ch???y trình irqbalance trong ch??? ????? m???t l???n không?"

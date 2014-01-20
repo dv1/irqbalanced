@@ -1,0 +1,14 @@
+Template: irqbalance/enable
+Type: boolean
+Default: true
+_Description: Would you like to enable irqbalance?
+ Enable the irqbalance daemon to balance IRQs on SMP systems and systems
+ with hyperthreading.
+
+Template: irqbalance/oneshot
+Type: boolean
+Default: false
+_Description: Would you like to balance the IRQs once?
+ irqbalance can run in one shot mode, where the IRQs are balanced only
+ once. This is advantageous on hyperthreading systems such as the Pentium
+ 4, which appear to be SMP systems, but are really one physical CPU.

@@ -1,0 +1,59 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance 0.55+20091017-1\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2009-10-23 08:03+0900\n"
+"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid "Would you like to enable irqbalance?"
+msgstr "irqbalance を有効にしますか?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"SMP システムや Hyper-Threading 対応システムで、IRQ を調整するために "
+"irqbalance デーモンを有効にします。"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid "Would you like to balance the IRQs once?"
+msgstr "一度 IRQ を調整させますか?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"irqbalance を IRQ が一度だけ調整される one shot モードで動作させられます。こ"
+"れは Pentium 4 のような、SMP システムに見えるが実際は 1 つの物理 CPU である "
+"Hyper-Threading 対応システムにおいて有効です。"

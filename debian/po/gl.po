@@ -1,0 +1,61 @@
+# Galician translation of irqbalance's debconf templates
+# This file is distributed under the same license as the irqbalance package.
+#
+# Jacobo Tarrio <jtarrio@debian.org>, 2008.
+# Marce Villarino <mvillarino@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2009-11-05 20:58+0100\n"
+"Last-Translator: Marce Villarino <mvillarino@gmail.com>\n"
+"Language-Team: Galician <proxecto@trasno.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid "Enable irqbalance?"
+msgid "Would you like to enable irqbalance?"
+msgstr "Desexa activar irqbalance?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid ""
+#| "Enable the irqbalance daemon to balance IRQs on SMP systems and systems "
+#| "with hyperthreading?"
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Activa o servizo irqbalance para equilibrar as IRQ nos sistemas con SMP e "
+"con "
+"hyperthreading."
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+#| msgid "Balance the IRQs once?"
+msgid "Would you like to balance the IRQs once?"
+msgstr "Desexa equilibrar as IRQ unha vez?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"Pódese executar irqbalance para equilibrar as IRQ unha soa vez. Isto é "
+"mellor nos sistemas con hyperthreading, tales como o Pentium 4, que semellan "
+"ser sistemas SMP pero en realidade son unha soa CPU."
+
+#~ msgid "Run irqbalance in one shot mode?"
+#~ msgstr "¿Executar irqbalance unha soa vez?"

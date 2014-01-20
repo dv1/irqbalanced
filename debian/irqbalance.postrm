@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+CONF=/etc/default/irqbalance
+
+if [ "$1" = "purge" ]; then
+    rm -f "$CONF.tmp" "$CONF"
+fi
+
+#DEBHELPER#

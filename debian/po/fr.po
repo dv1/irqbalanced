@@ -1,0 +1,60 @@
+# Translation of irqbalance debconf templates to French
+# Copyright (C) 2004-2009 Debian French l10n team <debian-l10n-french@lists.debian.org>
+# This file is distributed under the same license as the irqbalance package.
+#
+# Translators:
+#
+# Christian Perrier <bubulle@debian.org>, 2004-2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2009-10-19 11:08+0200\n"
+"Last-Translator: Christian Perrier <bubulle@debian.org>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid "Would you like to enable irqbalance?"
+msgstr "Faut-il activer irqbalance ?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Veuillez choisir si vous souhaitez activer le démon irqbalance pour répartir "
+"les requêtes d'interruptions (IRQ) sur les systèmes multiprocesseurs et les "
+"systèmes utilisant l'« hyperthreading »."
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid "Would you like to balance the IRQs once?"
+msgstr "Faut-il répartir les « IRQ » une seule fois ?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"Irqbalance peut être lancé pour ne répartir les requêtes d'interruption "
+"qu'une seule fois. Cela est avantageux sur les système avec "
+"« hyperthreading » comme les processeurs Pentium 4, qui apparaissent comme "
+"des systèmes multiprocesseurs même si un seul processeur est présent."
+
+#~ msgid "Run irqbalance in one shot mode?"
+#~ msgstr ""
+#~ "Veuillez choisir si vous souhaitez utiliser ce mode de fonctionnement."

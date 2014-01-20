@@ -1,0 +1,62 @@
+# translation of irqbalance_0.55+20091017-1_de.po to German
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
+#    Developers do not need to manually edit POT or PO files.
+#
+# Erik Schanze <eriks@debian.org>, 2004-2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance_0.55+20091017-1_de\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2009-10-30 22:02+0100\n"
+"Last-Translator: Erik Schanze <eriks@debian.org>\n"
+"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid "Would you like to enable irqbalance?"
+msgstr "Wollen Sie Irqbalance aktivieren?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Den Dienst Irqbalance zum Ausgleichen der IRQs auf "
+"SMP-Systemen und Systemen mit Hyperthreading aktivieren."
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid "Would you like to balance the IRQs once?"
+msgstr "Wollen Sie IRQs einmal ausgleichen?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"Irqbalance kann in einem «Einmal-Modus» betrieben werden, bei "
+"dem die IRQs nur einmal aufgeteilt werden. Das ist vorteilhaft "
+"auf Systemen mit Hyperthreading, wie Pentium 4, die sich wie "
+"SMP-Systeme verhalten, aber physisch nur eine CPU haben."
+

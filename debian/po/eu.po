@@ -1,0 +1,60 @@
+# translation of irqbalance_0.55+20091017-1_eu.po to
+# translation of irqbalance debconf to Euskara
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Xabier Bilbao <xabidu@gmail.com>, 2008.
+# Piarres Beobide <pi@beobide.net>, 2008.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: irqbalance_0.55+20091017-1_eu\n"
+"Report-Msgid-Bugs-To: irqbalance@packages.debian.org\n"
+"POT-Creation-Date: 2009-10-17 22:41+1100\n"
+"PO-Revision-Date: 2009-10-23 10:07+0200\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid "Enable irqbalance?"
+msgid "Would you like to enable irqbalance?"
+msgstr "Irqbalance gaitzea nahi duzu?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:1001
+#| msgid ""
+#| "Enable the irqbalance daemon to balance IRQs on SMP systems and systems "
+#| "with hyperthreading?"
+msgid ""
+"Enable the irqbalance daemon to balance IRQs on SMP systems and systems with "
+"hyperthreading."
+msgstr ""
+"Gaitu irqbalance daemon-a IRQak (etetze-eskaerak) kudeatzeko SMP "
+"sistemetan eta 'hyperthreading' sistemetan."
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+#| msgid "Balance the IRQs once?"
+msgid "Would you like to balance the IRQs once?"
+msgstr "IRQak behin bakarrik banatzea nahi duzu?"
+
+#. Type: boolean
+#. Description
+#: ../irqbalance.templates:2001
+msgid ""
+"irqbalance can run in one shot mode, where the IRQs are balanced only once. "
+"This is advantageous on hyperthreading systems such as the Pentium 4, which "
+"appear to be SMP systems, but are really one physical CPU."
+msgstr ""
+"irqbalance saio bakarreko moduan exekuta daiteke, IRQren banaketa bakarra "
+"egiteko. Hori lagungarria da 'hyperthreading' sistemetan (Pentium 4 bezalakoak), "
+"SMP sistemak diruditelako nahiz eta CPU bakarrekoak izan."
+

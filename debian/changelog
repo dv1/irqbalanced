@@ -1,0 +1,353 @@
+irqbalance (0.56-1ubuntu4) precise; urgency=low
+
+  * Apply patch from Stephen Gran to fix a SEGV on some systems.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 03 Feb 2012 22:13:07 -0700
+
+irqbalance (0.56-1ubuntu3) natty; urgency=low
+
+  * Fixed debian/irqbalance.config to correctly pickup existing
+    settings from /etc/default/irqbalance (LP: #705429)
+
+ -- James Page <james.page@canonical.com>  Thu, 27 Jan 2011 15:36:50 +0000
+
+irqbalance (0.56-1ubuntu2) natty; urgency=low
+
+  * Build-depend on quilt.
+
+ -- Matthias Klose <doko@ubuntu.com>  Thu, 20 Jan 2011 01:37:32 +0100
+
+irqbalance (0.56-1ubuntu1) natty; urgency=low
+
+  * Merge from debian unstable.  Remaining changes:
+    - Update maintainer according to spec.
+    - debian/rules, debian/irqbalance.dirs, debian/irqbalance.upstart:
+      Add upstart support.
+    - debian/control: Add libcap-ng support.
+    - debian/control: Update description to give the user a bit more
+      information on the package.
+    - debian/irqbalance.{config,postinst}: Ask the user ift hey want
+      to disable irqbalance or not. (LP: #573657)
+
+ -- Chuck Short <zulcss@ubuntu.com>  Mon, 10 Jan 2011 10:41:18 -0400
+
+irqbalance (0.56-1) unstable; urgency=low
+
+  * New upstream 
+  * 01-cputree-parse.patch was dropped by redhat
+  * Update debian/watch
+  * Fix out-of-date-standards-version
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Fri, 09 Jul 2010 15:20:02 +1000
+
+irqbalance (0.56-0ubuntu2) maverick; urgency=low
+
+  * debian/irqbalance.{config,postinst}: Ask the user if they want to 
+    disable irqbalance or not. (LP: #573657)
+
+ -- Chuck Short <zulcss@ubuntu.com>  Wed, 08 Sep 2010 09:01:22 -0400
+
+irqbalance (0.56-0ubuntu1) maverick; urgency=low
+
+  * New upstream release, this release offers better support for 2.3.35.
+  * debian/irqbalance.upstart: Dont respawn. (LP: #594509)
+  * debian/patches/do-irqbalance-pid.patch: Dropped no longer needed.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Wed, 23 Jun 2010 10:39:31 -0400
+
+irqbalance (0.55+20091017-5) unstable; urgency=low
+
+  * Fix incorrect apostrophe in IRQ's string
+    Patch by Brian Murray
+    Closes: 571160
+  * Debconf translations:
+    Vietnamese: Clytie Siddall. Closes: 576129
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sun, 11 Apr 2010 08:07:38 +1000
+
+irqbalance (0.55+20091017-4) unstable; urgency=low
+
+  * Debian source format is 3.0 (quilt)
+  * Fix out-of-date-standards-version
+  * Update description
+    Closes: 529878
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Fri, 29 Jan 2010 17:40:59 +1100
+
+irqbalance (0.55+20091017-3.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix broken Italian translation file that is b0rking automated
+    processes on i18n.debian.net. Closes: #556110
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 24 Jan 2010 15:27:07 +0100
+
+irqbalance (0.55+20091017-3ubuntu3) maverick; urgency=low
+
+  * debian/patches/do-irqbalance-pid.patch: Upstart needs a pid so it can shut down.
+    (LP: #580674)
+  * debian/irqbalance.upstart: Update upstart script. 
+
+ -- Chuck Short <zulcss@ubuntu.com>  Tue, 25 May 2010 17:38:47 -0400
+
+irqbalance (0.55+20091017-3ubuntu2) lucid; urgency=low
+
+  * Cleanup some grammatical errors (Closes: 571160)
+
+ -- Brian Murray <brian@ubuntu.com>  Tue, 23 Feb 2010 14:31:22 -0800
+
+irqbalance (0.55+20091017-3ubuntu1) lucid; urgency=low
+
+  * Merge from debian testing.  Remaining changes:
+    - Update maintainer according to Spec.
+    - debian/rules, debian/irqbalance.dirs, debian/irqbalance.upstart:
+      Add upstart support.
+    - debian/control: Add libcab-ng support.
+    - debian/control: Update description to give the user a bit more information 
+      on the package.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Mon, 04 Jan 2010 15:11:10 +0000
+
+irqbalance (0.55+20091017-3) unstable; urgency=low
+
+  * Debconf translations:
+    Japanese. Closes: 552048
+    Italian. Closes: 556110
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Mon, 23 Nov 2009 14:21:35 +1100
+
+irqbalance (0.55+20091017-2ubuntu3) lucid; urgency=low
+
+  * debian/irqbalance.upstart: Fix irqbalance upstart script. (LP: #499864) 
+
+ -- Chuck Short <zulcss@ubuntu.com>  Sat, 26 Dec 2009 22:12:26 -0500
+
+irqbalance (0.55+20091017-2ubuntu2) lucid; urgency=low
+
+  * debian/control: Add libcap-ng support. 
+  * debian/irqbalance.init, debian/irqbalance.upstart, 
+    debian/rules, debian/irqbalance.dirs: Add upstart support.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Mon, 14 Dec 2009 09:47:39 -0500
+
+irqbalance (0.55+20091017-2ubuntu1) lucid; urgency=low
+
+  * debian/control:
+    - Update maintainer according to spec.
+    - Added note about irqbalance and how it is not useful if you dont have
+      more than one CPU or CPU core.
+    - Added hardening wrapper. 
+
+ -- Chuck Short <zulcss@ubuntu.com>  Thu, 26 Nov 2009 11:26:06 -0500
+
+irqbalance (0.55+20091017-2) unstable; urgency=low
+
+  * Debconf translations:
+    Russian. Closes: 551502
+    French. Closes: 551585
+    Italian
+    Basque. Closes: 552073
+    Finnish. Closes: 552155
+    Czech. Closes: 552451
+    Swedish. Closes: 552735
+    Portuguese. Closes: 553082
+    German. Closes: 553394
+    Spanish. Closes: 553912
+    Galician. Closes: 554632
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sat, 07 Nov 2009 20:56:54 +1100
+
+irqbalance (0.55+20091017-1) unstable; urgency=low
+
+  * New svn version from http://irqbalance.googlecode.com/svn/trunk/
+    Closes: 529877
+  * Add VCS control headers
+  * Fix out-of-date-standards-version
+  * Fix patch-system-but-no-source-readme
+  * Fix maintainer-script-without-set-e
+  * Fix using-question-in-extended-description-in-templates
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Sat, 17 Oct 2009 21:19:11 +1100
+
+irqbalance (0.55-4) unstable; urgency=low
+
+  * New maintainer; closes: #529380
+  * Don't build depend on cdbs
+  * Build depend on quilt
+  * Depend on lsb-base
+  * Create PID file; closes: #443369
+  * Update debian/watch; closes: #449680
+  * Update debian/copyright
+  * Standards Version is 3.8.1
+  * Homepage is http://irqbalance.org/
+  * DH compat is 7
+
+ -- Anibal Monsalve Salazar <anibal@debian.org>  Wed, 20 May 2009 09:22:43 +1000
+
+irqbalance (0.55-3) unstable; urgency=low
+
+  * Ack NMUs.
+  * 01-cputree-parse.patch:
+    - Patch from Fedora to fix issues with cpuidle file. (closes: 517183)
+    - Detect number of CPUs on newer kernels correctly. (closes: 510103)
+
+ -- Kyle McMartin <kyle@debian.org>  Tue, 10 Mar 2009 14:41:18 -0400
+
+irqbalance (0.55-2.4) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix pending l10n issues. Debconf translations:
+    - Italian. Closes: #502467
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 02 Nov 2008 22:07:58 +0100
+
+irqbalance (0.55-2.3) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix pending l10n issues. Debconf translations:
+    - Romanian. Closes: #491283
+
+ -- Christian Perrier <bubulle@debian.org>  Tue, 14 Oct 2008 07:14:27 +0200
+
+irqbalance (0.55-2.2) unstable; urgency=low
+
+  * Non-maintainer upload to fix pending l10n issues.
+  * Debconf translations:
+    - Portuguese. Closes: #414452
+    - Galician. Closes: #489529
+    - Russian. Closes: #490074
+    - Finnish. Closes: #490620
+    - Basque. Closes: #490678
+    - Turkish. Closes: #490876
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 06 Jul 2008 08:41:54 +0200
+
+irqbalance (0.55-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix encoding issue in changelog. Closes: #454014
+  * Add LSB-formatted lines to the init script. Closes: #458461
+  * Fix variable spelling in the init script. Closes: #436143
+  * Debconf translations:
+    - Spanish. Closes: #403485
+    - Dutch. Closes: #450974
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 04 Feb 2008 20:44:02 +0100
+
+irqbalance (0.55-2) unstable; urgency=low
+
+  * Gratuitous version bump.
+
+ -- Kyle McMartin <kyle@ubuntu.com>  Wed, 23 May 2007 18:59:32 +0000
+
+irqbalance (0.55-1) unstable; urgency=low
+
+  * New upstream version. Closes: #402813
+
+ -- Kyle McMartin <kyle@ubuntu.com>  Fri,  2 Feb 2007 14:56:27 -0500
+
+irqbalance (0.12-6) unstable; urgency=low
+
+  * debian/po/sv.po: Swedish translation from Daniel Nylander. (Closes:
+    #332550)
+
+ -- Eric Dorland <eric@debian.org>  Mon, 10 Oct 2005 19:42:56 -0400
+
+irqbalance (0.12-5) unstable; urgency=low
+
+  * debian/control: Use ${misc:Depends} for debconf dependency, not
+    hardcoded.
+  * debian/control, irqbalance.1: Add better description as to when
+    irqbalance should be used. (Closes: #323708)
+
+ -- Eric Dorland <eric@debian.org>  Sun,  2 Oct 2005 23:04:21 -0400
+
+irqbalance (0.12-4) unstable; urgency=low
+
+  * debian/control:
+    - Standards-Version to 3.6.2.1.
+    - Have an alternate depend on debconf-2.0, to appease the 
+      will of Joey Hess.
+  * debian/watch: Add a watch file.
+
+ -- Eric Dorland <eric@debian.org>  Wed,  3 Aug 2005 01:24:59 -0400
+
+irqbalance (0.12-3) unstable; urgency=low
+
+  * debian/po/vi.po: Vietnamese debconf translation from Clytie
+    Siddall. (Closes: 312043)
+
+ -- Eric Dorland <eric@debian.org>  Sun,  5 Jun 2005 14:56:00 -0400
+
+irqbalance (0.12-2) unstable; urgency=low
+
+  * debian/po/cs.po: Czech debconf translation from Miroslav
+    Kure. (Closes: #298320)
+
+ -- Eric Dorland <eric@debian.org>  Fri, 11 Mar 2005 01:10:43 -0500
+
+irqbalance (0.12-1) unstable; urgency=medium
+
+  * New upstream release. No reason not to into testing. (Closes: #280660)
+
+ -- Eric Dorland <eric@debian.org>  Sat, 13 Nov 2004 12:52:55 -0500
+
+irqbalance (0.11-1) unstable; urgency=medium
+
+  * New upstream release. This release incorporates a bunch of the changes
+    I made to the code.
+  * debian/copyright: License changed to OSL 2.1.
+
+ -- Eric Dorland <eric@debian.org>  Sun, 31 Oct 2004 11:42:05 -0500
+
+irqbalance (0.09-5) unstable; urgency=low
+
+  * irqbalance.c: Add "exit(EXIT_SUCCESS)" to signal handler to actually
+    exit. Thanks Philipp Matthias Hahn. (Closes: #276631)
+
+ -- Eric Dorland <eric@debian.org>  Sun, 17 Oct 2004 21:52:44 -0400
+
+irqbalance (0.09-4) unstable; urgency=low
+
+  * debian/po/de.po: Add German translation from Erik
+    Schanze. Danke. (Closes: #264656)
+
+ -- Eric Dorland <eric@debian.org>  Mon,  9 Aug 2004 20:27:38 -0400
+
+irqbalance (0.09-3) unstable; urgency=low
+
+  * debian/po/ja.po: Add Japanese translation from Hideki
+    Yamane. Arigato. (Closes: #264121)
+
+ -- Eric Dorland <eric@debian.org>  Sat,  7 Aug 2004 17:40:44 -0400
+
+irqbalance (0.09-2) unstable; urgency=low
+
+  * The "Egalité-Liberté-Fraternité" release.
+  * debian/po/fr.po: Added French translation from Christian
+    Perrier. (Closes: #243639)
+
+ -- Eric Dorland <eric@debian.org>  Wed, 14 Apr 2004 20:50:59 -0400
+
+irqbalance (0.09-1) unstable; urgency=low
+
+  * New upstream release. Convert to po-debconf.
+  * debian/po/*: Add as part of po-debconf.
+  * debian/rules: Build-Depend on debhelper >= 4.1.16 for po-debconf.
+
+ -- Eric Dorland <eric@debian.org>  Sun,  7 Mar 2004 22:46:16 -0500
+
+irqbalance (0.08-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control: S-V to 3.6.1.
+  * debian/irqbalance.manpages: Add to include irqbalance manpage.
+
+ -- Eric Dorland <eric@debian.org>  Wed, 17 Dec 2003 22:24:51 -0500
+
+irqbalance (0.06-1) unstable; urgency=low
+   
+  * Initial Release. (Closes: #203712)
+
+ -- Eric Dorland <eric@debian.org>  Sun, 10 Aug 2003 19:15:39 -0400
+

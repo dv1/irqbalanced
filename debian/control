@@ -1,0 +1,22 @@
+Source: irqbalance
+Section: utils
+Priority: extra
+Maintainer: Ubuntu Developers <ubuntu-devel@lists.ubuntu.com>
+XSBC-Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Build-Depends: debhelper (>= 7), autoconf, automake, libtool, pkg-config, libglib2.0-dev, xutils-dev, hardening-wrapper, libcap-ng-dev, quilt
+Standards-Version: 3.9.0
+Homepage: http://irqbalance.org/
+Vcs-Svn: svn://irqbalance.googlecode.com/svn/trunk
+Vcs-Browser: http://irqbalance.googlecode.com/svn/trunk/
+
+Package: irqbalance
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, lsb-base (>= 3.1)
+Description: Daemon to balance interrupts for SMP systems
+ Daemon to balance interrupts across multiple CPUs, which can lead to
+ better performance and IO balance on SMP systems. This package is
+ especially useful on systems with multi-core processors, as interrupts
+ will typically only be serviced by the first core.
+ .
+ Note: irqbalance is not useful if you don't have more than one core
+       or socket.
