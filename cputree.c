@@ -306,16 +306,42 @@ void clear_work_stats(void)
 }
 
 
+/*
+ * Read from /sys/bus/cpu/devices in preference, as this does not
+ * contain other noise which may upset the parsing code (such as
+ * /sys/devices/system/cpu/cpufreq).
+ */
+static const char *cpu_devices_paths[] = {
+	"/sys/bus/cpu/devices",
+	"/sys/devices/system/cpu",
+	NULL,
+};
+
 void parse_cpu_tree(void)
 {
+	static const char *cpu_devices_path;
 	DIR *dir;
 	struct dirent *entry;
+	int i;
 
 	cpus_complement(unbanned_cpus, banned_cpus);
 
-	dir = opendir("/sys/devices/system/cpu");
-	if (!dir)
-		return;
+	if (!cpu_devices_path) {
+		for (i = 0; cpu_devices_paths[i]; i++) {
+			dir = opendir(cpu_devices_paths[i]);
+			if (dir) {
+				cpu_devices_path = cpu_devices_paths[i];
+				break;
+			}
+		}
+		if (!cpu_devices_path)
+			return;
+	} else {	
+		dir = opendir(cpu_devices_path);
+		if (!dir)
+			return;
+	}	
+
 	do {
 		entry = readdir(dir);
                 if (entry && strlen(entry->d_name)>3 && strstr(entry->d_name,"cpu")) {
