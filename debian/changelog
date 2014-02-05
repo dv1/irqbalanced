@@ -1,3 +1,10 @@
+irqbalance (0.56-1ubuntu4-rmk1) precise; urgency=low
+
+  * Fix CPU topology parsing in the presence of cpufreq
+  * Add interrupt classifications for i.MX6 hardware
+
+ -- Russell King <rmk@arm.linux.org.uk>  Wed, 05 Feb 2014 17:22:03 +0000
+
 irqbalance (0.56-1ubuntu4) precise; urgency=low
 
   * Apply patch from Stephen Gran to fix a SEGV on some systems.
