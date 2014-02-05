@@ -59,6 +59,7 @@ static char *legacy_modules[] = {
 	"ohci_hcd",
 	"ehci_hcd",
 	"EMU10K1",
+	"ci_hdrc",
 	0
 };
 
@@ -80,6 +81,8 @@ static char *storage_modules[] = {
 	"libata",
 	"ohci1394",
 	"sym53c8xx",
+	"ahci",
+	"mmc",
 	0
 };
 
