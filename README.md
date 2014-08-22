@@ -1,7 +1,7 @@
-Russell King's irqbalanced fork for the Freescale i.MX6 SoC
-===========================================================
+Russell King's irqbalanced fork for ARM devices
+===============================================
 
-This is a fork of irqbalanced to add proper support for the i.MX6 System-on-a-Chip.
+This is a fork of irqbalanced to add proper support for ARM devices.
 The regular irqbalanced contains several IRQ misclassifications, which renders it useless
 on these systems. Also, the way the number of CPUs were being determined was faulty.
 
