@@ -15,14 +15,15 @@ char *classes[] = {
 	"ethernet",
 	"gbit-ethernet",
 	"10gbit-ethernet",
+	"av",
 	0
 };
 
-int map_class_to_level[7] = 
-{ BALANCE_PACKAGE, BALANCE_CACHE, BALANCE_CACHE, BALANCE_NONE, BALANCE_CORE, BALANCE_CORE, BALANCE_CORE };
+int map_class_to_level[8] = 
+{ BALANCE_PACKAGE, BALANCE_CACHE, BALANCE_CACHE, BALANCE_NONE, BALANCE_CORE, BALANCE_CORE, BALANCE_CORE, BALANCE_CORE };
 
 
-int class_counts[7];
+int class_counts[8];
 
 /*
 
@@ -66,6 +67,7 @@ static char *legacy_modules[] = {
 static char *timer_modules[] = {
  	"rtc",
  	"timer",
+ 	"twd",
 	0
 };
 
@@ -99,6 +101,15 @@ static char *ethernet_modules[] = {
 	0
 };
 
+static char *av_modules[] = {
+	"VPU",
+	"ipu",
+	"galcore",
+	"hdmi",
+	"spdif",
+	0
+};
+
 
 int find_class(struct interrupt *irq, char *moduletext)
 {
@@ -128,6 +139,10 @@ int find_class(struct interrupt *irq, char *moduletext)
 			if (strstr(moduletext, "-tx"))
 				guess = IRQ_TGETH;
 		}
+
+	for (i=0; av_modules[i]; i++)
+		if (strstr(moduletext, av_modules[i]))
+			guess = IRQ_AV;
 
 	if (guess == IRQ_OTHER && irq->number==0)
 		guess = IRQ_TIMER;

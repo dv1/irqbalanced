@@ -17,6 +17,7 @@
 #define IRQ_ETH         4
 #define IRQ_GETH	5
 #define IRQ_TGETH	6
+#define IRQ_AV		7
 
 
 struct package {
@@ -25,7 +26,7 @@ struct package {
 
 	cpumask_t	mask;
 
-	int class_count[7];
+	int class_count[8];
 
 	GList	*cache_domains;
 	GList 	*interrupts;
@@ -41,7 +42,7 @@ struct cache_domain {
 
 	cpumask_t	package_mask;
 
-	int class_count[7];
+	int class_count[8];
 
 	GList	*cpu_cores;
 	GList 	*interrupts;
@@ -54,7 +55,7 @@ struct cpu_core {
 
 	int	marker;
 
-	int class_count[7];
+	int class_count[8];
 
 	cpumask_t	package_mask;
 	cpumask_t	cache_mask;
