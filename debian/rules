@@ -38,7 +38,10 @@ clean: unpatch
 	# Add here commands to clean up after the build process.
 	dh_auto_clean
 	dh_clean 
-	rm -fr aclocal.m4 compile config.guess config.h config.h.in config.log config.status config.sub configure INSTALL install-sh libtool ltmain.sh m4 Makefile.in missing stamp-h1
+	rm -fr aclocal.m4 compile config.guess config.h config.h.in \
+		config.log config.status config.sub configure INSTALL \
+		install-sh libtool ltmain.sh m4 Makefile.in missing stamp-h1 \
+		debian/irqbalance
 
 install: build
 	dh_testdir
