@@ -47,7 +47,6 @@ install: build
 	dh_installdirs
 	# Add here commands to install the package into debian/irqbalance.
 	# $(MAKE) DESTDIR=$(CURDIR)/debian/irqbalance install
-	cp -p debian/irqbalance.upstart debian/irqbalance/etc/init/irqbalance.conf
 	mv irqbalance debian/irqbalance/usr/sbin
 
 # Build architecture-independent files here.
@@ -60,7 +59,8 @@ binary-arch: install
 	dh_testroot
 	dh_installchangelogs 
 	dh_installdebconf
-	dh_installinit --upstart-only
+	dh_systemd_enable
+	dh_systemd_start
 	dh_installdocs
 	dh_installman
 	dh_strip
