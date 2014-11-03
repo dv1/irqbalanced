@@ -1,4 +1,4 @@
-Source: irqbalance
+Source: irqbalance-imx
 Section: utils
 Priority: extra
 Maintainer: Ubuntu Developers <ubuntu-devel@lists.ubuntu.com>
@@ -9,7 +9,7 @@ Homepage: http://irqbalance.org/
 Vcs-Svn: svn://irqbalance.googlecode.com/svn/trunk
 Vcs-Browser: http://irqbalance.googlecode.com/svn/trunk/
 
-Package: irqbalance
+Package: irqbalance-imx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, lsb-base (>= 3.1)
 Description: Daemon to balance interrupts for SMP systems

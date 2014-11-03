@@ -1,3 +1,9 @@
+irqbalance-imx (0.56-1) unstable; urgendy=low
+
+  * Added -imx suffix to distringuish from upstream
+
+ -- Josua Mayer <privacy@not.given>  Mon, 03 Nov 2014 15:10:52 +0100
+
 irqbalance (0.56-1ubuntu4-rmk1) precise; urgency=low
 
   * Fix CPU topology parsing in the presence of cpufreq
