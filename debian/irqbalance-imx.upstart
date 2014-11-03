@@ -12,14 +12,6 @@ stop on runlevel [!2345]
 expect fork
 
 script 
-	test -f /etc/default/irqbalance && . /etc/default/irqbalance
-
-	test "$ENABLED" != "0" || exit 0
-
-	if test "$ONESHOT" != "0"; then
-		DOPTIONS="--oneshot"
-	fi
-
 	exec /usr/sbin/irqbalance  $DOPTIONS
 
 end script

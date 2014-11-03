@@ -61,7 +61,6 @@ binary-arch: install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs 
-	dh_installdebconf
 	dh_installinit
 	dh_systemd_enable
 	dh_systemd_start

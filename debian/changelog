@@ -1,4 +1,4 @@
-irqbalance-imx (0.56-1) unstable; urgendy=low
+irqbalance-imx (0.56-1) unstable; urgency=low
 
   * Added -imx suffix to distringuish from upstream
 
