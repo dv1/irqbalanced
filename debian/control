@@ -3,7 +3,7 @@ Section: utils
 Priority: extra
 Maintainer: Ubuntu Developers <ubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
-Build-Depends: debhelper (>= 7), autoconf, automake, libtool, pkg-config, libglib2.0-dev, xutils-dev, hardening-wrapper, libcap-ng-dev, quilt, dh-systemd
+Build-Depends: debhelper (>= 7), autoconf, automake, libtool, pkg-config, libglib2.0-dev, xutils-dev, hardening-wrapper, libcap-ng-dev, quilt, dh-systemd >= 1.5
 Standards-Version: 3.9.0
 Homepage: http://irqbalance.org/
 Vcs-Svn: svn://irqbalance.googlecode.com/svn/trunk
