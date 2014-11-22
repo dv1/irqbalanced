@@ -1,79 +1,16 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
 
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
-# These are used for cross-compiling and for saving the configure script
-# from having to guess our platform (since we know it already)
-DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
-DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
-ifneq ($(DEB_HOST_GNU_TYPE),$(DEB_BUILD_GNU_TYPE))
-CROSS= --build $(DEB_BUILD_GNU_TYPE) --host $(DEB_HOST_GNU_TYPE)
-else
-CROSS= --build $(DEB_BUILD_GNU_TYPE)
-endif
+%:
+	dh $@ --with autotools_dev --with autoreconf
 
-include /usr/share/quilt/quilt.make
-
-configure: configure-stamp
-configure-stamp:
-	dh_testdir
-	# Add here commands to configure the package.
-	autoreconf -fv --install
-	./configure $(CROSS) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
-	touch configure-stamp
-
-build: patch build-stamp
-
-build-stamp: configure-stamp  
-	dh_testdir
-	# Add here commands to compile the package.
-	$(MAKE) CFLAGS="-g -Os -D_FORTIFY_SOURCE=2 -Wall -W `pkg-config --cflags glib-2.0`"
-	touch $@
-
-clean: unpatch
-	dh_testdir
-	dh_testroot
-	rm -f build-stamp configure-stamp
-	# Add here commands to clean up after the build process.
-	dh_auto_clean
-	dh_clean 
-	rm -fr aclocal.m4 compile config.guess config.h config.h.in \
-		config.log config.status config.sub configure INSTALL \
-		install-sh libtool ltmain.sh m4 Makefile.in missing stamp-h1 \
-		debian/irqbalance-imx
-
-install: build
-	dh_testdir
-	dh_testroot
-	dh_prep  
-	dh_installdirs
-	# Add here commands to install the package into debian/irqbalance-imx.
-	# $(MAKE) DESTDIR=$(CURDIR)/debian/irqbalance-imx install
-	cp irqbalance debian/irqbalance-imx/usr/sbin
-
-# Build architecture-independent files here.
-binary-indep: install
-# We have nothing to do by default.
-
-# Build architecture-dependent files here.
-binary-arch: install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs 
-	dh_installinit
-	dh_systemd_enable
-	dh_systemd_start
-	dh_installdocs
-	dh_installman
-	dh_strip
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-binary: binary-indep binary-arch
-.PHONY: build clean binary-indep binary-arch binary install configure
+override_dh_auto_configure:
+	dh_auto_configure -- CFLAGS="-Os -D_FORTIFY_SOURCE=2"
