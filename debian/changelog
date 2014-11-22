@@ -1,3 +1,10 @@
+irqbalance-imx (0.56-2) unstable; urgency=low
+
+  * rewrote rules file
+  * added init script
+
+ -- Josua Mayer <privacy@not.given>  Sat, 22 Nov 2014 18:36:29 +0100
+
 irqbalance-imx (0.56-1) unstable; urgency=low
 
   * Added -imx suffix to distringuish from upstream
