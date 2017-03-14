@@ -17,7 +17,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="i.MX6 IRQ balancing service"
 NAME=daemonexecutablename
-DAEMON=/usr/sbin/irqbalance
+DAEMON=/usr/sbin/irqbalance-imx
 DAEMON_ARGS=""
 SCRIPTNAME=/etc/init.d/$NAME
 

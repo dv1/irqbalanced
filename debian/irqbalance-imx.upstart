@@ -12,6 +12,6 @@ stop on runlevel [!2345]
 expect fork
 
 script 
-	exec /usr/sbin/irqbalance  $DOPTIONS
+	exec /usr/sbin/irqbalance-imx  $DOPTIONS
 
 end script
