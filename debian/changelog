@@ -1,3 +1,9 @@
+irqbalance-imx (0.56.99.2) unstable; urgency=medium
+
+  * resolve conflicts with Debian irqbalance package
+
+ -- Josua Mayer <privacy@not.given>  Tue, 14 Mar 2017 13:34:11 +0000
+
 irqbalance-imx (0.56.99.1) unstable; urgency=low
 
   * rewrote rules file
