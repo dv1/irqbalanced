@@ -12,6 +12,8 @@ Vcs-Browser: http://irqbalance.googlecode.com/svn/trunk/
 Package: irqbalance-imx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, lsb-base (>= 3.1)
+Breaks: irqbalance
+Provides: irqbalance
 Description: Daemon to balance interrupts for SMP systems
  Daemon to balance interrupts across multiple CPUs, which can lead to
  better performance and IO balance on SMP systems. This package is
