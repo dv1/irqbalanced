@@ -28,8 +28,8 @@ LIBS = $(CAPNG_LDADD) $(GLIB_LIBS)
 AM_CFLAGS = -g -Os -W -Wall -Wshadow -Wformat -Wundef $(GLIB_CFLAGS) -D_GNU_SOURCE
 noinst_HEADERS = bitmap.h constants.h cpumask.h irqbalance.h non-atomic.h \
 	types.h
-sbin_PROGRAMS = irqbalance
-irqbalance_SOURCES = activate.c bitmap.c classify.c cputree.c irqbalance.c \
+sbin_PROGRAMS = irqbalance-imx
+irqbalance_imx_SOURCES = activate.c bitmap.c classify.c cputree.c irqbalance.c \
 	irqlist.c network.c numa.c placement.c powermode.c procinterrupts.c
 
 CONFIG_CLEAN_FILES = debug*.list config/*

@@ -3,7 +3,7 @@ Description=irqbalance
 After=sysinit.target
  
 [Service]
-ExecStart=/usr/sbin/irqbalance
+ExecStart=/usr/sbin/irqbalance-imx
 Type=forking
  
 [Install]
